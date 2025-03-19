@@ -36,24 +36,6 @@ To extract relevant message information, the following parsing functions are use
 - **Mid()**: Extracts a substring from a specific position.
 - **Right()**: Extracts the last characters from the right.
 
-### **Visual Basic Form Interface**
-Below is an example of the Visual Basic user interface for the chat application:
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/example-chat-ui.png" alt="Chat Application Interface" width="600">
-</div>
-
-### **Message Reception and Processing**
-Messages are only processed if they meet the following conditions:
-1. The message starts with `*` and ends with `#`.
-2. The destination address matches the receiving PC’s address or is set to broadcast (`A`).
-3. Parsed messages are displayed in the chat window with the sender’s address.
-
-### **Message Transmission**
-To send a message, the application:
-1. Concatenates the required components into the correct format.
-2. Sends the formatted string over the RS485 network.
-
 ### **Visual Basic Form Interface PC1**  
 Below is an example of the Visual Basic user interface:
 
@@ -67,6 +49,18 @@ Below is an example of the Visual Basic user interface:
 <div align="left">
   <img src="https://github.com/user-attachments/assets/8bfc0cd7-981a-4923-840f-c12fd18cb2ea" alt="Form Interface Screenshot" width="600">
 </div>
+
+
+### **Message Reception and Processing**
+Messages are only processed if they meet the following conditions:
+1. The message starts with `*` and ends with `#`.
+2. The destination address matches the receiving PC’s address or is set to broadcast (`A`).
+3. Parsed messages are displayed in the chat window with the sender’s address.
+
+### **Message Transmission**
+To send a message, the application:
+1. Concatenates the required components into the correct format.
+2. Sends the formatted string over the RS485 network.
 
 ## MSComm Setup in Visual Basic
 To configure MSComm for serial communication:
